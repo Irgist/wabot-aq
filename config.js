@@ -1,54 +1,76 @@
-let fs = require('fs')
-let chalk = require('chalk')
-
-global.owner = ['6282388332165', '6282388332165', '6282388332165'] // Put your number here
-global.mods = [] // Want some help?
-global.prems = ['6285335398270', '6282388332165']// Premium user has unlimited limit
+gc1 = ''
+gc2 = ''
+gc3 = ''
+global.linkGC = ['https://chat.whatsapp.com/HJ9pD2XJ8vq7whuAYOvT1Y', ''] // ganti jadi group lu
+global.owner = ['6282388332165'] // Put your number here //owner eval
+global.kontak = ['6282388332165','0'] //Ketika ada yang ngetik #owner
+global.mods = ['0'] // Want some help?
+global.prems = ['6282388332165','6285335398270'] // Premium user has unlimited limit
 global.APIs = { // API Prefix
   // name: 'https://website'
-  nrtm: 'https://nurutomo.herokuapp.com',
+  nrtm: 'https://nurutomo.herokuapp.com', 
   xteam: 'https://api.xteam.xyz',
   zahir: 'https://zahirr-web.herokuapp.com',
-  zeks: 'https://api.zeks.xyz',
+  lol: 'https://api.lolhuman.xyz',
+  dhnjing: 'https://dhnjing.xyz',
+  zeks: 'https://api.zeks.me',
   pencarikode: 'https://pencarikode.xyz',
   LeysCoder: 'https://leyscoders-api.herokuapp.com'
 }
 global.APIKeys = { // APIKey Here
-  // 'https://website': 'apikey'
-  'https://api.xteam.xyz': '97dc1640f514134d',
+  // 'https://website': 'apikey' (apikey kalian)
+  'https://api.xteam.xyz': '7415bc4287ad5ca8',
+  'https://api.lolhuman.xyz': 'RFK-Rey',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
-  'https://api.zeks.xyz': 'apivinz',
+  'https://api.zeks.me': 'apivinz',
   'https://pencarikode.xyz': 'pais',
   'https://leyscoders-api.herokuapp.com': 'dappakntlll'
 }
 
+lolkey = 'RFK-Rey'
+zekskey = 'apivinz'
+xteamkey = '7415bc4287ad5ca8'
+//xteam        MIMINETBOT
+namaig = 'GAK ADA :)'
+namagithub = 'GAK ADA :)'
+kasihcaption = `Nih kak`
+namakontak1 = 'Irgi Setiaone'
+namakontak2 = 'Tsukasa Bot'
+
+//kasihcaption = `Nih Kak`
+
 // Sticker WM
 
-const spack = fs.readFileSync("lib/exif.json")
-const stickerpack = JSON.parse(spack)
-if (stickerpack.spackname == '') {
-  var sticker_name = '© Punya Irgi'
-  var sticker_author = 'Nyolong Mati n/ WhatsApp Bot 083150488328'
-} else {
-  var sticker_name = stickerpack.spackname
-  var sticker_author = stickerpack.sauthor
-}
-
-const file_exif = "lib/exif.json"
-fs.watchFile(file_exif, () => {
-  fs.unwatchFile(file_exif)
-  console.log(chalk.redBright("Update 'exif.json'"))
-  delete require.cache[file_exif]
-  require('./lib/exif.json')
-})
-
-global.packname = sticker_name
-global.author = sticker_author
 
 
+global.packname = '©Punya Irgi'
+global.author = 'Nyolong Mati\nTsukasa Bot\nWA :083150488328'
+
+//yyy
+bc = 'TsulasaBot' //KAKA BOT Broadcast
+footer = '\n©Tsukasa Bot'
+namabot = 'Tsukasa Bot'
+namalu = 'Irgi Setiaone'
+
+//Nyolong Mati \nTsukasa Bot\nWa 083150488328
+
+// 
+wait = '_*Tunggu Sebentar...*_'
+global.wait = '_*Tunggu Sebentar...*_'
+global.rpg = 'Fitur Rpg Dimatikan\nKetik *!enable* *rpg* untuk menggunakan fitur ini!\nKalo Mau main Disini aja\nhttps://chat.whatsapp.com/Fwp19ronURW9oPz3rih4Ho'
+global.nsfw = 'Fitur NSFW Dimatikan\nKetik *!enable* *nsfw* untuk menggunakan fitur ini!\n“Katakanlah kepada orang laki-laki yang beriman: Hendaklah mereka menahan pandanganya, dan memelihara kemaluannya; … Katakanlah kepada wanita yang beriman: Hendaklah mereka menahan pandangannya, dan kemaluannya, dan janganlah mereka Menampakkan perhiasannya, kecuali yang (biasa) nampak dari padany,” \n(TQS. Al-Nur [24]: 30-31).'
+global.eror = '_*Server Error*_'
+
+global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
+
+// tingkat kesulitan, semakin tinggi semakin susah
 global.multiplier = 69 // The higher, The harder levelup
 
+//*****************PEMBATAS*********************
+// JANGAN DI GANTI NTAR KLO GABISA JAN TANYA GW
 
+let fs = require('fs')
+let chalk = require('chalk')
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
   fs.unwatchFile(file)
